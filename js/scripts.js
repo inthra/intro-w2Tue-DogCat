@@ -4,8 +4,18 @@ $ (document).ready(function() {
     $('ul#dog-speak').empty().append('<li>What up cat!</li>')
   });
 
-  $('button#dog').click(function(){
+  $('button#dog').click(function() {
     $('ul#cat-speak').empty().append('<li>What up dog!</li>')
     $('ul#dog-speak').empty().append('<li>Bark!</li>')
   });
+
+  $("button#light-text").click(function() {
+    $("body").removeClass();
+    $("body").addClass("light-text-dark-bg");
+  });
+
+  $("button#dark-text").click(function() {
+    $("body").removeClass();
+  });
+
 });
